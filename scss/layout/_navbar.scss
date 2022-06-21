@@ -1,0 +1,75 @@
+/* ------------------------------------------------------  */
+/* HEADER MENU  */
+/* ------------------------------------------------------  */
+
+#header {
+    #menu {
+        #nav-menu {
+            /*  height: 10%; */
+            background-color: black;
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            line-height: 1em;
+            letter-spacing: 0.3rem;
+            padding-top: 1.5rem;
+            padding: 2rem;
+
+
+            .container-logo {
+                width: 100vw;
+
+                &:hover {
+                    background-color: black;
+                }
+
+                .link-logo {
+                    /* margin-left: 5rem; */
+                    width: 100vw;
+                    @include flexcol;
+                    text-decoration: none;
+                    font-size: $title-size2;
+                      display: none; 
+                 
+
+                    p {
+                        text-decoration: none;
+                        color: whitesmoke;
+                    }
+                }
+            }
+
+            #menu-flex {
+                #menu-container {
+                    #menu-position {
+                        width: 100%;
+
+                        #menu-list {
+                            #nav-item {
+                                #nav-link {
+                                    color: $hover-color;
+                                    white-space: nowrap;
+                                }
+
+                                #nav-link:hover {
+                                    color: $white-hover;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #menu-hamb {
+        background-color: black;
+        display: block;
+        z-index: -999;   
+    }
+}

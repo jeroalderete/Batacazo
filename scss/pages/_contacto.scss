@@ -1,0 +1,37 @@
+//  CONTACTO MOBILE PAGE //
+
+// MAIN SECTION CONTACTO //
+
+
+    #main {
+        color: black;
+
+        section {
+            .contacto-title {
+                padding: 0;
+                font-size: $title-size4;
+            }
+
+            #main-contacto {
+                background-color: rgb(204, 195, 195);
+                width: 90%;
+                margin: 0 auto;
+
+                div {
+                    #btn-contacto {
+                        @extend %btn1;
+
+                        &:hover {
+                            background-color: $grey-hover2;
+                        }
+
+                        a {
+                            padding: 1rem;
+                            text-decoration: none;
+                            color: whitesmoke;
+                        }
+                    }
+                }
+            }
+        }
+    }

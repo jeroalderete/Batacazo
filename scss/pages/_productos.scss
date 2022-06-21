@@ -1,0 +1,83 @@
+//  PHOTOS MOBILE PAGE //
+
+.flex-photo-gallery {
+    padding-top: 2rem;
+    @include flexcol;
+    text-align: center;
+    margin: 2.2rem 1.1rem;
+
+    .gallery-title {
+        margin-bottom: 3rem;
+
+        h1 {
+            text-align: center;
+            font-size: $title-size3;
+            letter-spacing: 0.3rem;
+
+            span {
+                font-weight: 100;
+            }
+        }
+    }
+
+    .grid-photo-container {
+        display: grid;
+        grid-template-areas:
+            "gallery-section1"
+            "gallery-section2"
+            "gallery-section3";
+
+        .gallery-section1 {
+            grid-area: gallery-section1;
+
+            .gallery-flex-container {
+                @include flexcol;
+                align-items: center;
+                gap: 1rem;
+
+                img {
+                    filter: brightness(85%);
+                    width: 50%;
+                    padding-bottom: 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .gallery-section2 {
+            grid-area: gallery-section2;
+
+            .gallery-flex-container {
+                @include flexcol;
+                align-items: center;
+                gap: 1rem;
+
+                img {
+                    filter: brightness(85%);
+                    width: 50%;
+                    padding-bottom: 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .gallery-section3 {
+            grid-area: gallery-section3;
+            display: none;
+
+            .gallery-flex-container {
+                @include flexcol;
+                align-items: center;
+                gap: 1rem;
+
+                img {
+                    filter: brightness(85%);
+                    width: 50%;
+                    height: fit-content;
+                    padding-bottom: 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

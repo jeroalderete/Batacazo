@@ -1,0 +1,41 @@
+/* RESET  */
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// GLOBAL SETTINGS
+
+#body {
+    font-family: "Roboto";
+    background-color: $white;
+    color: black;
+}
+
+// ALL H-LINE SETTING
+
+.horizontal-line {
+    grid-area: h-line;
+    margin: 2rem 4rem;
+}
+
+.horizontal-line-footer {
+    margin: 1rem 4rem;
+}
+
+.horizontal-line-carousel{
+    grid-area: horizontal-line-carousel;
+    margin: 2rem 4rem;
+}
+
+.horizontal-line-vst{
+    margin: 2rem 4rem;
+    grid-area: horizontal-line-vst;
+    display: none;
+}
+
+.horizontal-line-studio{
+    display: none;
+}

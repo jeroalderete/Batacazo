@@ -1,0 +1,91 @@
+/* ------------------------------------------------------  */
+/* FOOTER INDEX  */
+/* ------------------------------------------------------  */
+
+.footer {
+	padding-top: 1rem;
+	font-family: "roboto";
+
+    .footer_logo {
+        a {
+            text-decoration: none;
+            font-family: "roboto";
+            font-size: $title-size2;
+            color: #232323;
+        }
+    }
+    .footer_nav {
+        ul {
+            padding-left: 0;
+            li {
+                display: inline-block;
+                margin-right: 53px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    color: #232323;
+                    font-weight: 600;
+                    letter-spacing: 0.2em;
+                    -webkit-transition: all 200ms ease;
+                    -moz-transition: all 200ms ease;
+                    -ms-transition: all 200ms ease;
+                    -o-transition: all 200ms ease;
+                    transition: all 200ms ease;
+                    &:hover {
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-icons-flex {
+        padding: 1.3rem 0;
+        @include flexrow;
+        font-size: 1rem;
+
+        a {
+            color: $text-color;
+            text-decoration: none;
+
+            #icon-item {
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                border: 2px solid whitesmoke;
+
+                &:hover {
+             /*        background-color: $black-article; */
+                    color: green;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: 1.5rem;
+        padding-bottom: 13px;
+        font-family: "roboto";	
+        font-size: 12px;
+        color: #232323;
+        a{
+            text-decoration: none;
+           font-weight: bold;
+           color: #000;
+           &:hover{
+            color: green;
+            cursor: pointer;
+           }
+        }
+    }
+}
+
+
+
+
+.batacazo {
+    font-family: "roboto";
+}

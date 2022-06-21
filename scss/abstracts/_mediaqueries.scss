@@ -1,0 +1,271 @@
+//------------------------------------------------------//
+// MEDIA QUERIES TABLET SCREEN  //
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+// MEDIA QUERIES DESKTOP SCREEN  //
+//------------------------------------------------------//
+
+
+@media screen and(min-width: 600px) {
+    #body {
+        #header {
+            #menu {
+                #nav-menu {
+                    background-color: $black-background;
+                    letter-spacing: 0.1rem;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 0.9rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    line-height: 1em;
+                    letter-spacing: 0.3rem;
+                    padding-top: 1.5rem;
+
+                    .container-logo {
+                        width: 20%;
+
+                        &:hover {
+                            background-color: black;
+                            z-index: -2;
+                        }
+
+                        .link-logo {
+                            display: none;
+                            width: 10w;
+                            margin: 1rem;
+                            align-items: flex-start;
+
+                            text-decoration: none;
+                            font-size: $title-size2;
+
+                            p {
+                                text-decoration: none;
+                                color: whitesmoke;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #menu-hamb {
+                display: none;
+            }
+        }
+
+        .grid-container {
+            grid-template-areas:
+                "main-title main-title"
+                "img-section1 img-section2"
+                "img-section3 img-section4"
+                "img-section5 img-section6"
+                "img-section7 img-section8"
+                "img-section9 img-section9";
+
+            .main-title {
+
+                padding-top: 3rem;
+
+                h1 {
+                    font-size: $title-size4;
+                }
+            }
+        }
+
+        .flex-photo-gallery {
+            .gallery-title {
+                padding-top: 5rem;
+
+                h1 {
+                    font-size: $title-size4;
+                }
+            }
+
+            .grid-photo-container {
+                padding: 0 5rem 5rem 5rem;
+                gap: 3rem;
+                grid-template-areas:
+                    "gallery-section1 gallery-section2"
+                    "gallery-section1 gallery-section2"
+                    "gallery-section3 gallery-section3";
+
+                .gallery-section1,
+                .gallery-section2,
+                .gallery-section3 {
+                    .gallery-flex-container {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        #main {
+            section {
+                padding-top: 3rem;
+            }
+        }
+
+    }
+}
+
+@media screen and(min-width: 760px) {
+    #body {
+        #header {
+            #menu {
+                #nav-menu {
+                    .container-logo {
+
+                        &:hover {
+                            background-color: black;
+                            z-index: -2;
+                        }
+
+                        .link-logo {
+                            display: block;
+                            text-decoration: none;
+                            font-size: $title-size2;
+
+                            p {
+                                text-decoration: none;
+                                color: whitesmoke;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #menu-hamb {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    //------------------------------------------------------//
+    //    INDEX DESKTOP PAGE //
+    //------------------------------------------------------//
+
+    #body {
+        main {
+            .grid-container {
+                grid-template-areas:
+                    "main-title main-title main-title"
+                    "img-section1 img-section2 img-section3"
+                    "img-section4 img-section5 img-section6"
+                    "img-section7 img-section8 img-section9";
+
+                .main-title {
+                    h1 {
+                        padding: 2rem;
+                        text-transform: uppercase;
+                        font-size: $title-size5;
+                    }
+                }
+
+                .img-section5 {
+                    display: block;
+                }
+
+                .img-section6 {
+                    display: block;
+                }
+
+                .img-section7 {
+                    display: block;
+                }
+
+                .img-section8 {
+                    display: block;
+                }
+
+                .img-section9 {
+                    display: block;
+                }
+
+            }
+        }
+
+        /*         PHOTOS  */
+
+        #header {
+            #menu {
+                #nav-menu {
+                    .container-logo {
+                        &:hover {
+                            background-color: black;
+                        }
+
+                        .link-logo {
+
+                            p {
+                                text-decoration: none;
+                                color: whitesmoke;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .flex-photo-gallery {
+            .gallery-title {
+                h1 {
+                    font-size: $title-size6;
+                }
+            }
+
+            .grid-photo-container {
+                padding: 2rem 5rem 5rem 5rem;
+                gap: 3rem;
+                grid-template-areas:
+                    "gallery-section1 gallery-section2 gallery-section3"
+                    "gallery-section1 gallery-section2 gallery-section3"
+                    "gallery-section1 gallery-section2 gallery-section3";
+
+                .gallery-section1,
+                .gallery-section2,
+                .gallery-section3 {
+                    .gallery-flex-container {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+                .gallery-section2 {
+                    display: block;
+                }
+
+                .gallery-section3 {
+                    display: block;
+                }
+
+            }
+        }
+
+        //------------------------------------------------------//
+        //  CONTACTO DESKTOP PAGE  //
+        //------------------------------------------------------//
+
+
+
+            #main {
+                section {
+                    h1 {
+                        font-size: $title-size5;
+                    }
+                }
+            }
+    
+    }
+}

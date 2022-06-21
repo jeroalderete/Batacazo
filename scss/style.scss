@@ -1,0 +1,142 @@
+/* IMPORTS VARIABLES MIXINS EXTENDS  */
+
+// ABSTRACTS
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/extend";
+@import "abstracts/mediaqueries";
+
+/* PAGES IMPORTS  */
+
+@import "pages/productos";
+@import "pages/contacto";
+
+/* LAYOUT IMPORTS  */
+@import "layout/navbar";
+@import "layout/footer";
+
+/* BASE IMPORTS  */
+
+@import "base/reset";
+
+// MEDIA QUERIES
+
+
+/* ------------------------------------------------------  */
+/* ------------------------------------------------------  */
+
+// FONTS //
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+
+
+
+/* ------------------------------------------------------  */
+/*                   MOBILE FIRST                          */
+/* ------------------------------------------------------  */
+
+
+// ------------------------------------------------------  //
+// INDEX MOBILE PAGE //
+// ------------------------------------------------------  //
+
+// INDEX MAIN HERO SECTION //
+
+main {
+    height: 90%;
+
+    .grid-container {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-areas:
+            "main-title"
+            "img-section1"
+            "img-section2"
+            "img-section3"
+            "img-section4"
+            "img-section5"
+            "img-section6"
+            "img-section7"
+            "img-section8"
+            "img-section9";
+        column-gap: 2rem;
+       
+
+        .main-title {
+            grid-area: main-title;
+             @include indexTitle; 
+             padding-bottom: 2rem;
+
+            text-transform: uppercase;
+            h1{
+                font-size: $title-size3;
+            }
+        }
+        
+
+        .img-section1 {
+            grid-area: img-section1;
+            margin: 3rem 0;
+        }
+
+        .img-section2 {
+            grid-area: img-section2;
+            margin: 3rem 0;
+        }
+
+        .img-section3 {
+            grid-area: img-section3;
+            margin: 3rem 0;
+        }
+
+        .img-section4 {
+            grid-area: img-section4;
+            margin: 2rem 0;
+        }
+
+        .img-section5 {
+            grid-area: img-section5;
+            display: none;
+        }
+
+        .img-section6 {
+            grid-area: img-section6;
+            display: none;
+        }
+
+        .img-section7 {
+            grid-area: img-section7;
+            display: none;
+        }
+
+        .img-section8 {
+            grid-area: img-section8;
+            display: none;
+        }
+
+        .img-section9 {
+            grid-area: img-section9;
+            display: none;
+        }
+
+
+        .portfolio-img {
+            @include flexcol;
+        }
+
+        section {
+            div {
+
+                img {
+                    width: 75%;
+                }
+
+            }
+        }
+    }
+}

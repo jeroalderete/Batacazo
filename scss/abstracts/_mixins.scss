@@ -1,0 +1,144 @@
+// -----  MIXIN LAYOUT ------ //
+
+// MIXIN FLEX COLUMN
+
+@mixin flexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// MIXIN FLEX ROW
+
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+// MIXINS TITLES 
+
+@mixin indexTitle {
+    color: $text-color;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.7rem;
+    font-family: "Roboto Condensed";
+}
+
+@mixin portfolioTitle {
+    font-size: 2rem;
+    color: whitesmoke;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Source Code Pro";
+}
+
+@mixin portfolioTitle2 {
+    font-size: 1.9rem;
+    color: whitesmoke;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Source Code Pro";
+}
+
+@mixin portfolioTitle3 {
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    color: whitesmoke;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Source Code Pro";
+}
+
+@mixin portfolioText {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+@mixin produccion-title{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+// MIXIN IMAGE OVERLAY
+
+@mixin imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Code Pro";
+    opacity: 0;
+    transition: opacity 0.9s;
+}
+
+// MIXIN TEXT INFO
+
+@mixin text {
+    text-align: center;
+    font-family: "Roboto";
+}
+
+// MIXIN MEDIDAS
+
+@mixin medidas ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+// BTN FOR MEDIA QUERIES
+
+@mixin btn1{
+    font-family: "Cairo";
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    transition: .1s linear;
+    color: #fff;
+    border: solid 1.5px #fff;
+    border-radius: 5rem;
+    background-color: transparent;
+}
+
+// BOX EQUIPAMIENTO
+
+@mixin box-equipamiento{
+    background-color: rgb(22, 21, 21);
+    padding: 0 1rem;
+    list-style-type: none;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    
+}

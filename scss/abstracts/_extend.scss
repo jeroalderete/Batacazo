@@ -1,0 +1,76 @@
+
+// BOTONES 
+
+%btn1{
+    font-family: "Cairo";
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: .1s linear;
+    color: #fff;
+    border: solid 1.5px black;
+    background-color: black;
+}
+
+%btn2{
+    border: 1px solid whitesmoke;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: black;
+} 
+
+// CARDS
+
+%card{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+// TITLES 
+
+%title {
+    font-size: $title-size2;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: $text-color;
+}
+
+// UNDERLINE
+
+%underline {
+    border-bottom: 0.1rem solid whitesmoke;
+}
+
+// BACKGROUND OVERLAY
+
+%background-overlay {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 65vh;
+}
+
+%background-overlay2{
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+}
