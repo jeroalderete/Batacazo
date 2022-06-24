@@ -14,6 +14,7 @@
 
 /* LAYOUT IMPORTS  */
 @import "layout/navbar";
+@import "layout/navbar2";
 @import "layout/footer";
 
 /* BASE IMPORTS  */
@@ -33,6 +34,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
 
@@ -64,39 +66,38 @@ main {
             "img-section7"
             "img-section8"
             "img-section9";
-        column-gap: 2rem;
-       
+        gap: 3rem;
+        padding-bottom: 5rem;
+
 
         .main-title {
             grid-area: main-title;
-             @include indexTitle; 
-             padding-bottom: 2rem;
+            @include indexTitle;
+           /*  padding-bottom: 2rem; */
+           padding-top: 5rem;
 
             text-transform: uppercase;
-            h1{
+
+            h1 {
                 font-size: $title-size3;
             }
         }
-        
+
 
         .img-section1 {
             grid-area: img-section1;
-            margin: 3rem 0;
         }
 
         .img-section2 {
             grid-area: img-section2;
-            margin: 3rem 0;
         }
 
         .img-section3 {
             grid-area: img-section3;
-            margin: 3rem 0;
         }
 
         .img-section4 {
             grid-area: img-section4;
-            margin: 2rem 0;
         }
 
         .img-section5 {
@@ -127,16 +128,56 @@ main {
 
         .portfolio-img {
             @include flexcol;
+            a {
+                color: #000;
+                &:hover {
+                    color: green;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                }
+
+                h2 {
+                    text-align: center;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1rem;
+                    font-weight: 300; 
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 1rem;
+                }
+            }
+            
         }
 
         section {
             div {
+                border: 0.1rem solid rgba(131, 130, 130, .8);
+                padding: 2rem;
+                margin: 0 2rem;
+
+                .bag {
+                    padding: 0.4rem;
+                    margin: 0.4rem;
+                    border: none;
+
+                }
 
                 img {
                     width: 75%;
+                    transition: 1.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        z-index: 2;
+                        cursor: pointer;
+                    }
                 }
 
             }
         }
+
     }
 }

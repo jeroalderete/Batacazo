@@ -10,7 +10,7 @@
 
 #body {
     font-family: "Roboto";
-    background-color: $white;
+    background-color: white;
     color: black;
 }
 
@@ -38,4 +38,8 @@
 
 .horizontal-line-studio{
     display: none;
+}
+
+a{
+    text-decoration: none;
 }

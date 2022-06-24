@@ -15,6 +15,7 @@
         }
     }
     .footer_nav {
+        font-family: "Arimo", sans-serif;
         ul {
             padding-left: 0;
             li {
@@ -28,7 +29,7 @@
                     font-size: 0.8rem;
                     text-transform: uppercase;
                     color: #232323;
-                    font-weight: 600;
+               /*      font-weight: 600; */
                     letter-spacing: 0.2em;
                     -webkit-transition: all 200ms ease;
                     -moz-transition: all 200ms ease;
@@ -55,7 +56,7 @@
             #icon-item {
                 font-size: 1.5rem;
                 padding: 0.5rem;
-                border: 2px solid whitesmoke;
+             /*    border: 2px solid whitesmoke; */
 
                 &:hover {
              /*        background-color: $black-article; */

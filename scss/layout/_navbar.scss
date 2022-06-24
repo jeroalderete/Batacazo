@@ -3,10 +3,12 @@
 /* ------------------------------------------------------  */
 
 #header {
+
+    font-family: "Arimo", sans-serif;
+
     #menu {
         #nav-menu {
-            /*  height: 10%; */
-            background-color: black;
+            /*     background-color: transparent;
             letter-spacing: 0.1rem;
             font-weight: 400;
             font-style: normal;
@@ -17,24 +19,51 @@
             line-height: 1em;
             letter-spacing: 0.3rem;
             padding-top: 1.5rem;
+            padding: 2rem; */
+            background-color: white;
+            font-size: .67893rem;
+            /*  padding: 0 1.06667rem; */
             padding: 2rem;
-
+            letter-spacing: .2rem;
+            font-weight: 500;
+            line-height: 1.6;
+            list-style: none;
+            text-transform: uppercase;
 
             .container-logo {
                 width: 100vw;
 
-                &:hover {
-                    background-color: black;
-                }
-
                 .link-logo {
-                    /* margin-left: 5rem; */
                     width: 100vw;
                     @include flexcol;
                     text-decoration: none;
                     font-size: $title-size2;
-                      display: none; 
-                 
+                    display: none;
+                   
+
+                    img {
+                        transition: 1s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            z-index: 2;
+
+                            img:hover {
+                                animation: rotating 3s linear infinite;
+                            }
+
+                            @keyframes rotating {
+                                from {
+                                    transform: rotate(0deg);
+                                }
+
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
+
 
                     p {
                         text-decoration: none;
@@ -50,14 +79,21 @@
 
                         #menu-list {
                             #nav-item {
+                                font-size: .77893rem;
+
                                 #nav-link {
-                                    color: $hover-color;
-                                    white-space: nowrap;
+                                    transition: all .24s ease-out;
+                                    text-decoration: none;
+                                    /* color: #7f7e7e; */
+                                    color: #232323;
+                                    font-weight: 500;
+                                    -webkit-transition: all .24s ease-out;
+                                    -o-transition: all .24s ease-out;
                                 }
 
                                 #nav-link:hover {
-                                    color: $white-hover;
-                                    text-decoration: none;
+                                    cursor: pointer;
+                                    color: green;
                                 }
                             }
                         }
@@ -67,9 +103,17 @@
         }
     }
 
-    #menu-hamb {
-        background-color: black;
-        display: block;
-        z-index: -999;   
+    nav {
+        .navbar-dark {
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28000, 000, 000, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+        }
+
+        #menu-hamb {
+            background-color: #ccc;
+            display: block;
+            z-index: -999;
+        }
     }
 }

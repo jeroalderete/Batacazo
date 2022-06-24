@@ -1,7 +1,7 @@
-//  PHOTOS MOBILE PAGE //
+//  PRODUCTOS MOBILE PAGE //
 
 .flex-photo-gallery {
-    padding-top: 2rem;
+    padding-top: 4rem;
     @include flexcol;
     text-align: center;
     margin: 2.2rem 1.1rem;
@@ -11,7 +11,7 @@
 
         h1 {
             text-align: center;
-            font-size: $title-size3;
+            font-size: $title-size2;
             letter-spacing: 0.3rem;
 
             span {
