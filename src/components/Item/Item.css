@@ -1,0 +1,27 @@
+.grid {
+    display: flex;
+}
+
+.producto-nombre {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: "Roboto";
+}
+
+.producto-precio {
+    color: black;
+    font-weight: 700;
+    font-family: "Muli", "sans-serif";
+    font-size: 17px;
+    letter-spacing: 0.01rem;
+
+}
+
+.producto-talle {
+    font-style: italic;
+    font-size: 15px;
+}

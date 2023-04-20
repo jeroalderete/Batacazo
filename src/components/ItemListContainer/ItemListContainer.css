@@ -1,0 +1,46 @@
+.grid {
+    display: grid;
+    grid-template-columns: 30%, 30%, 30%;
+}
+
+.title {
+    width: 100vw;
+    text-align: center;
+    padding-top: 12rem;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    font-family: "Roboto";
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    padding-top: 1.5rem;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.precioProducto {
+    font-weight: 700;
+}
+
+.boton-agregar {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+    background-color: rgb(129, 163, 174);
+}
+
+.boton-agregar:focus {
+    outline: none;
+}

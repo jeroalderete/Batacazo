@@ -1,0 +1,17 @@
+.checkout-button {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.checkout-hide {
+    display: none;
+}
+
+.displayNone {
+    display: hidden;
+}
+
+.hide{
+    display: none;
+}

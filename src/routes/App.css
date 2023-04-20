@@ -1,0 +1,23 @@
+#root {
+  width: 100vw;
+}
+
+.title {
+  color: black;
+  width: 100vw;
+  text-align: center;
+  padding-top: 12rem 0;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+.error-container {
+  padding-top: 12rem;
+}

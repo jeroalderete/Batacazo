@@ -1,0 +1,39 @@
+.cart-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-border {
+    border: 3px solid black;
+}
+
+.cartEmpty-message {
+    padding-top: 2rem;
+    width: 100%;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+.cart--empty {
+    padding: 10px 45px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    color: whitesmoke;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cart--empty:hover {
+    background-color: grey;
+    transition: background-color 0.2s ease-in-out;
+}

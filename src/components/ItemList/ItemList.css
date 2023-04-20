@@ -1,0 +1,8 @@
+div.item-container {
+  padding: 3rem;
+}
+
+ul.items-list {
+  display: flex;
+  gap: 1.5rem;
+}

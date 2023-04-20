@@ -1,0 +1,95 @@
+/* ------------------------------------------------------  */
+/* FOOTER INDEX  */
+/* ------------------------------------------------------  */
+.footer {
+    padding-top: 5rem;
+    font-family: "roboto";
+}
+
+.footer .footer_logo a {
+    text-decoration: none;
+    font-family: "roboto";
+    font-size: 2rem;
+    color: #232323;
+}
+
+.footer .footer_nav {
+    font-family: "Arimo", sans-serif;
+}
+
+.footer .footer_nav ul {
+    padding-left: 0;
+}
+
+.footer .footer_nav ul li {
+    display: inline-block;
+    margin-right: 53px;
+}
+
+.footer .footer_nav ul li:last-child {
+    margin-right: 0;
+}
+
+.footer .footer_nav ul li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #232323;
+    letter-spacing: 0.2em;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.footer .footer_nav ul li a:hover {
+    color: green;
+}
+
+.footer .footer-icons-flex {
+    padding: 1.3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer .footer-icons-flex .a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer .footer-icons-flex .a #icon-item {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.footer .footer-icons-flex .a #icon-item:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.footer .copyright {
+    margin-top: 1.5rem;
+    padding-bottom: 13px;
+    font-family: "roboto";
+    font-size: 12px;
+    color: #232323;
+}
+
+.footer .copyright a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer .copyright a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.batacazo {
+    font-family: "roboto";
+}
