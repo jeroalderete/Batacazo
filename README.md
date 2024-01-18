@@ -61,5 +61,7 @@ Start server
 
 <a>[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeronimoalderete/)</a>&nbsp;
 
-<a>[![Jade Web Preview](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://jeroalderete.github.io/Jade/)</a>&nbsp;
+## Jade Web Preview :envelope_with_arrow:
+
+<a>[![Jade Web Preview](https://jeroalderete.github.io/Jade/)</a>&nbsp;
 
