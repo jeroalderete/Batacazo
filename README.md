@@ -63,5 +63,5 @@ Start server
 
 ## Jade Web Preview :envelope_with_arrow:
 
-<a>[![Jade Web Preview](https://jeroalderete.github.io/Jade/)</a>&nbsp;
+<a>[Jade Web Preview](https://jeroalderete.github.io/Jade/)</a>&nbsp;
 
